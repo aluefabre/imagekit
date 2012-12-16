@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin
+   id="ocrkit"
+   name="ocrkit"
+   version="1.0.0"
+   provider-name="fabrelab">
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.103.0"/>
+      <import plugin="org.eclipse.core.runtime" version="3.8.0"/>
+   </requires>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="textkit.ocrkit.tool.Application">
+         </run>
+      </application>
+   </extension>
+
+</plugin>
